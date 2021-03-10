@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+}
+
+header .contenitore {
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+header .contenitore ul {
+  display: flex;
+  justify-content: center;
+}
+
+header .contenitore ul li {
+  padding-left: 20px;
+}
+
+header .contenitore ul li a {
+  text-decoration: none;
+  color: #002d75;
+  font-size: 20px;
+}
+
+header .contenitore ul li:hover a {
+  color: #4a5e7e;
+  text-decoration: underline;
+}
+
