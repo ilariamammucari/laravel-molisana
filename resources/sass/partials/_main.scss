@@ -6,3 +6,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.box-card {
+    width: 100%;
+    @include flex(space-between);
+    .card {
+        width: calc(100% / 3);
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -48,6 +48,20 @@ header .contenitore ul li:hover a {
   background-size: cover;
 }
 
+.box-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-card .card {
+  width: calc(100% / 3);
+}
+
+.box-card .card img {
+  width: 100%;
+}
+
 footer {
   width: 100%;
 }
