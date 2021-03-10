@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('titolo', 'Home')
+@section('titolo', 'Molisana Home')
 @section('content')
     <div class="img-sfondo"></div>
 @endsection

@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('titolo', 'Prodotti')
+@section('titolo', 'Molisana Prodotti')
 @section('content')
     <div class="box-card">
         @foreach ($formati as $formato)
