@@ -16,11 +16,40 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 })->name('home-page');
+
+
+
 Route::get('/prodotti', function () {
     $pasta = config('pasta');
-    $data = ['formati' => $pasta];
+    $collection = collect($pasta);
+    $pasta_lunga = $collection->where('tipo','lunga');
+    $pasta_corta = $collection->where('tipo','corta');
+    $pasta_cortissima = $collection->where('tipo','cortissima');
+
+    $data = [
+        'formati' => [
+            'lunga' => $pasta_lunga,
+            'corta' => $pasta_corta,
+            'cortissima' => $pasta_cortissima
+        ]
+    ];
     return view('prodotti', $data);
 })->name('prodotti');
+
+
+
+Route::get('/dettagli/{$id}', function ($id) {
+    $pasta = config('pasta');
+    if ( is_numeric($id) && $id >= 0 && $id < count($pasta) ){
+        $prodotto = $pasta[$id];
+        $data = ['formati' => $prodotto];
+        return view('dettagli', $data);
+    } else {
+        abort('404');
+    }
+})->name('dettagli');
+
+
 Route::get('/news', function () {
     $notizie = config('notizie');
     $data = ['news' => $notizie];
