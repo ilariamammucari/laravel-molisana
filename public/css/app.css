@@ -61,15 +61,25 @@ header .contenitore ul li:hover a {
 .box-card {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .box-card .titolo {
   width: 100%;
   color: #002d75;
-  text-transform: capitalize;
-  padding: 40px 0 10px 0;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+
+.box-card .titolo h2 {
+  padding: 40px;
+  font-size: 50px;
+}
+
+.box-card .titolo h2 a:hover {
+  color: #4a5e7e;
 }
 
 .box-card .card {
@@ -100,8 +110,12 @@ header .contenitore ul li:hover a {
   opacity: 0.3;
 }
 
-.box-prodotti {
+.box-pasta {
   background-color: #cadee4;
+}
+
+.box-prodotti {
+  background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
 }
 
 .sotto-titolo {
@@ -164,8 +178,8 @@ header .contenitore ul li:hover a {
 }
 
 .descrizione p {
-  text-align: center;
   padding: 50px 200px;
+  text-align: justify;
 }
 
 .descrizione .info {

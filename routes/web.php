@@ -36,7 +36,13 @@ Route::get('/prodotti', function () {
     return view('prodotti', $data);
 })->name('prodotti');
 
-
+Route::get('/tipi-paste/{tipo}', function ($tipo) {
+    $pasta = config('pasta');
+    $collection = collect($pasta);
+    $pasta_tipo = $collection->where('tipo',$tipo);
+    $data = ['formati' => $pasta_tipo];
+    return view('tipi-pasta', $data);
+})->name('pagina-tipi-paste');
 
 Route::get('/dettagli/{id}', function ($id) {
     $pasta = config('pasta');

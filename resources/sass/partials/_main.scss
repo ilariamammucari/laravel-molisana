@@ -9,13 +9,23 @@
 
 .box-card {
     width: 100%;
-    @include flex(space-between);
+    @include flex(center);
     flex-wrap: wrap;
     .titolo {
         width: 100%;
         color: $colore_scritte;
-        text-transform: capitalize;
-        padding: 40px 0 10px 0;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 40px 0 20px 0;
+        h2 {
+            padding: 40px;
+            font-size: 50px;
+            a {
+                &:hover {
+                    color: $colore-hover;
+                }
+            }
+        }
     }
     .card {
         width: calc(100% / 3);
@@ -42,8 +52,12 @@
     }
 }
 
-.box-prodotti {
+.box-pasta {
     background-color: $sfondo-prodotti;
+}
+
+.box-prodotti {
+    background-image: url('../../img/fondo-pag-speciali.jpg');
 }
 
 .sotto-titolo {
@@ -98,8 +112,8 @@
 }
 .descrizione {
     p {
-        text-align: center;
         padding: 50px 200px;
+        text-align: justify;
     }
     .info {
         @include flex(space-around);

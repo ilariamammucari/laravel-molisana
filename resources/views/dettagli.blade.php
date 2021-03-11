@@ -20,7 +20,6 @@
             <div class="peso">
                 <i class="fas fa-balance-scale"></i>
                 <p>{{ $formati['peso'] }}</p>
-                </p>
             </div>
         </div>
     </div>
