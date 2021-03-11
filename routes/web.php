@@ -38,16 +38,16 @@ Route::get('/prodotti', function () {
 
 
 
-Route::get('/dettagli/{$id}', function ($id) {
-    $pasta = config('pasta');
-    if ( is_numeric($id) && $id >= 0 && $id < count($pasta) ){
-        $prodotto = $pasta[$id];
-        $data = ['formati' => $prodotto];
-        return view('dettagli', $data);
-    } else {
-        abort('404');
-    }
-})->name('dettagli');
+// Route::get('/dettagli/{$id}', function ($id) {
+//     $pasta = config('pasta');
+//     if ( is_numeric($id) && $id >= 0 && $id < count($pasta) ){
+//         $prodotto = $pasta[$id];
+//         $data = ['formati' => $prodotto];
+//         return view('dettagli', $data);
+//     } else {
+//         abort('404');
+//     }
+// })->name('pagina-dettagli');
 
 
 Route::get('/news', function () {
