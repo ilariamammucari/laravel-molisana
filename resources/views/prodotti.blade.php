@@ -2,7 +2,7 @@
 
 @section('titolo', 'Molisana Prodotti')
 @section('content')
-    <div class="box-card">
+    <div class="box-card box-prodotti">
         @foreach ($formati as $tipo => $formato)
         <div class="titolo">
             <h2>{{ $tipo }}</h2>
@@ -11,7 +11,7 @@
         <div class="card">
             <img src="{{ $pasta['src'] }}" alt="formato-pasta">
             <div class="overlay">
-                <a href="#">{{ $pasta['titolo'] }}</a>
+                <a href="{{ route('pagina-dettagli', ['id' => $k]) }}">{{ $pasta['titolo'] }}</a>
             </div>
         </div>
         @endforeach

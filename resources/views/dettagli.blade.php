@@ -1,23 +1,25 @@
 @extends('layout.app')
 
-@section('titolo', 'Molisana dettagli prodotti')
+@section('titolo',$formati['titolo'])
 @section('content')
     <div class="box-prodotto">
-        <img src="{{ $formato['src-h'] }}" alt="pasta">
-        <img src="{{ $formato['src-p'] }}" alt="pasta">
+        <img src="{{ $formati['src-h'] }}" alt="pasta">
+        <img src="{{ $formati['src-p'] }}" alt="pasta">
     </div>
     <div class="descrizione">
-        {!! $formato['descrizione'] !!}
+        <p>{!! $formati['descrizione'] !!}</p>
         <div class="info">
             <div class="tipo">
-                <p>{{ $formato['tipo'] }}</p>
+                <i class="fas fa-info-circle"></i>
+                <p>{{ $formati['tipo'] }}</p>
             </div>
             <div class="cottura">
-                <p>{{ $formato['cottura'] }}</p>
+                <i class="fas fa-stopwatch"></i>
+                <p>{{ $formati['cottura'] }}</p>
             </div>
             <div class="peso">
-                <p>
-                <p>{{ $formato['peso'] }}</p>
+                <i class="fas fa-balance-scale"></i>
+                <p>{{ $formati['peso'] }}</p>
                 </p>
             </div>
         </div>

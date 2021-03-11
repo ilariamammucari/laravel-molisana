@@ -11,6 +11,12 @@
     width: 100%;
     @include flex(space-between);
     flex-wrap: wrap;
+    .titolo {
+        width: 100%;
+        color: $colore_scritte;
+        text-transform: capitalize;
+        padding: 40px 0 10px 0;
+    }
     .card {
         width: calc(100% / 3);
         padding-bottom: 10px;
@@ -34,6 +40,10 @@
             opacity: 0.3;
         }
     }
+}
+
+.box-prodotti {
+    background-color: $sfondo-prodotti;
 }
 
 .sotto-titolo {
@@ -75,6 +85,30 @@
         border: 2px solid $c_grigio;
         &:hover{
             background-color: $c_bianco;
+        }
+    }
+}
+
+.box-prodotto {
+    width: 100%;
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+.descrizione {
+    p {
+        text-align: center;
+        padding: 50px 200px;
+    }
+    .info {
+        @include flex(space-around);
+        padding: 100px 0 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+        i {
+            color: $colore-scritte;
+            font-size: 30px;
         }
     }
 }
