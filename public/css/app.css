@@ -110,10 +110,6 @@ header .contenitore ul li:hover a {
   opacity: 0.3;
 }
 
-.box-pasta {
-  background-color: #cadee4;
-}
-
 .box-prodotti {
   background-image: url(/images/fondo-pag-speciali.jpg?06a79f19fbb4489a17e2dff67ce37137);
 }
@@ -166,6 +162,10 @@ header .contenitore ul li:hover a {
 
 .card-news button:hover {
   background-color: #fff;
+}
+
+.box-pasta {
+  background-color: #cadee4;
 }
 
 .box-prodotto {

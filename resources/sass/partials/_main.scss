@@ -1,3 +1,4 @@
+// home-page
 .img-sfondo {
     width: 100%;
     height: 850px;
@@ -7,6 +8,7 @@
     background-size: cover;
 }
 
+// parti in comune tra prodotti,news e tipi di pasta
 .box-card {
     width: 100%;
     @include flex(center);
@@ -52,14 +54,11 @@
     }
 }
 
-.box-pasta {
-    background-color: $sfondo-prodotti;
-}
-
 .box-prodotti {
     background-image: url('../../img/fondo-pag-speciali.jpg');
 }
 
+// news
 .sotto-titolo {
     width: 100%;
     height: 100px;
@@ -101,6 +100,11 @@
             background-color: $c_bianco;
         }
     }
+}
+
+// tipi pasta
+.box-pasta {
+    background-color: $sfondo-prodotti;
 }
 
 .box-prodotto {
