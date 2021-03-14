@@ -19427,6 +19427,13 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+$(document).ready(function () {
+  setTimeout(function () {
+    $('.caricamento').addClass('hidden');
+    $('.container').removeClass('hidden');
+  }, 3000);
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
